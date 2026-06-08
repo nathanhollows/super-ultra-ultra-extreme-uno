@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Super Extreme Uno | A Twist on Uno</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" href="/normalize.css" type="text/css">
+        <link rel="stylesheet" href="/sakura.css?ver=37" type="text/css">
+    </head
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-2 hidden-sm"></div>
+                <div class="col-8 center jumbo">
+                    <h1>Super Ultra Extreme <br>Extreme Uno</h1>
+                    <p>A variant of Uno where all the cards matter.</p>
+                    <hr class="one">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 hidden-sm"></div>
+                <div class="col-8">
+                    <p class="center"><a href="/rules.pdf">Open the printable rules</a></p>
+                    <h2 class="center">Setup</h2 class="center">
+                    <p>
+                    Deal 7 cards to each player. <br>
+                    Place the remaining cards face down on the table. This is the Draw Pile. <br>
+                    The starting player flips a card from the Draw Pile face up. This is now the Play Pile. <br>
+                    The Discard Pile is first created when a 1,6, or 9 is played. <br>
+                    Play starts in a clockwise direction.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 hidden-sm"></div>
+                <div class="col-8">
+                    <h2 class="center">Stacking Effects</h2>
+                    <p>
+                    There are two stackable effects. They can be pushed and moved around with 3, 4, 5, <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="31.763309mm" height="31.776455mm" viewBox="0 0 31.763309 31.776455" version="1.1" id="svg238" inkscape:version="1.0.2 (e86c870879, 2021-01-15)" sodipodi:docname="skip.svg">
+
+
+
+                                    <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(-106.39364,-63.014302)">
+                                    <path id="g6635-3" d="m 122.2951,63.014302 c -4.02167,0 -8.14917,1.481667 -11.21833,4.656666 -6.24417,6.244167 -6.24417,16.298334 0,22.436665 6.24416,6.244166 16.29833,6.244166 22.43666,0 6.13833,-6.244165 6.24417,-16.298331 0,-22.436665 -3.06916,-3.174999 -7.09083,-4.656666 -11.21833,-4.656666 z m 0,5.291666 c 1.79917,0 3.70417,0.529167 5.3975,1.481667 l -14.49917,14.499167 c -2.43416,-4.021667 -1.79916,-9.419167 1.69334,-12.911667 2.01083,-2.116667 4.65666,-3.069167 7.40833,-3.069167 z m 9.10167,5.185834 c 2.43416,4.021666 1.79916,9.419166 -1.69334,12.911666 -3.4925,3.492498 -8.78416,4.021665 -12.91166,1.5875 z" style="stroke-width:1.05833" sodipodi:nodetypes="sccscsscccscscc"></path>
+                                    </g>
+                                </svg>, or <svg
+                                  xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                  xmlns:cc="http://creativecommons.org/ns#"
+                                  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                  xmlns:svg="http://www.w3.org/2000/svg"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                  width="21.16667mm"
+                                  height="34.395828mm"
+                                  viewBox="0 0 21.16667 34.395828"
+                                  version="1.1"
+                                  id="svg503"
+                                  inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+                                  sodipodi:docname="reverse.svg">
+                                    <g
+                                        inkscape:label="Layer 1"
+                                        inkscape:groupmode="layer"
+                                        id="layer1"
+                                        transform="translate(147.41072,-239.82589)">
+                                    <path
+                                        id="g6643-0"
+                                        d="m -136.82739,239.82589 2.64584,2.64583 -10.58333,10.58334 c -2.64584,2.64583 -2.64584,7.9375 0,10.58333 l 5.29166,-5.29167 10.58333,-10.58333 2.64584,2.64583 v -10.58333 z m 0,34.39583 -2.64583,-2.64583 10.58333,-10.58333 c 2.64584,-2.64584 2.64584,-7.9375 0,-10.58334 l -5.29166,5.29167 -10.58333,10.58333 -2.64584,-2.64583 v 10.58333 z"
+                                        style="stroke-width:1.05833"
+                                        sodipodi:nodetypes="ccsccccccccscccccc" />
+                                    </g>
+                                </svg>.
+                    </p>
+                    <p>
+                    <img src="pickup.svg"> Pick Up cards (2, +2, +4) stack and increase the number of cards the next player must pickup.
+                    </p>
+                    <p>
+                    <img src="stack.svg"> Pick Up the Discards (8) stack.
+                    </p>
+                </div>
+            </div>	
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="center">The Cards</h2 class="center">
+                </div>
+            </div>
+            <div class="deck">
+
+                <div class="card-container">
+                    <div class="card card-yellow">
+                        <div class="card-front">
+                            <span class="card-title">0</span>
+                            <span class="card-brief">Everyone Switch</span>
+                            <span class="card-description">All players pass their hand to the next player.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card card-blue">
+                        <div class="card-front">
+                            <span class="card-title">1</span>
+                            <span class="card-brief">Everyone Discards 1</span>
+                            <span class="card-description">Each player <i>must</i> discard one card into the discard pile.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card card-green">
+                        <div class="card-front">
+                            <span class="card-title">2</span>
+                            <span class="card-brief">Pick Up Two</span>
+                            <span class="card-description">Pick up two cards. Stacks with +2 and +4.</span>
+                        </div>
+                        <div class="icons">
+                            <img src="pickup.svg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card card-red">
+                        <div class="card-front">
+                            <span class="card-title">3</span>
+                            <span class="card-brief">Another Turn!</span>
+                            <span class="card-description">Have another turn. There's not much more to be said.</span>
+                        </div>
+                        <div class="icons">
+                            <img src="pickup.svg">
+                            <img src="stack.svg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card card-red">
+                        <div class="card-front">
+                            <span class="card-title">4</span>
+                            <span class="card-brief">Reverse Skip</span>
+                            <span class="card-description">Reverse the direction of play and then skip the next player.</span>
+                        </div>
+                        <div class="icons">
+                            <img src="pickup.svg">
+                            <img src="stack.svg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card card-red">
+                        <div class="card-front">
+                            <span class="card-title">5</span>
+                            <span class="card-brief">Push Back</span>
+                            <span class="card-description">The direction of play is reversed for one turn.</span>
+                        </div>
+                        <div class="icons">
+                            <img src="pickup.svg">
+                            <img src="stack.svg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card card-blue">
+                        <div class="card-front">
+                            <span class="card-title">6</span>
+                            <span class="card-brief">6's and 9's</span>
+                            <span class="card-description">Everyone <i>may</i> discard their 6's and 9's.</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card card-yellow">
+                        <div class="card-front">
+                            <span class="card-title">7</span>
+                            <span class="card-brief">Switch Hands</span>
+                            <span class="card-description">Choose another player and switch hands with them.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card card-green">
+                        <div class="card-front">
+                            <span class="card-title">8</span>
+                            <span class="card-brief">Pick Up the Discards</span>
+                            <span class="card-description">The next player picks up the discard pile and their turn is skipped.</span>
+                        </div>
+                        <div class="icons">
+                            <img src="stack.svg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card card-blue">
+                        <div class="card-front">
+                            <span class="card-title">9</span>
+                            <span class="card-brief">6's and 9's</span>
+                            <span class="card-description">Everyone <i>may</i> discard their 6's and 9's.</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-container">
+                    <div class="card card-red">
+                        <div class="card-front">
+                            <span class="card-title"><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="31.763309mm" height="31.776455mm" viewBox="0 0 31.763309 31.776455" version="1.1" id="svg238" inkscape:version="1.0.2 (e86c870879, 2021-01-15)" sodipodi:docname="skip.svg">
+
+
+
+                                    <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(-106.39364,-63.014302)">
+                                    <path id="g6635-3" d="m 122.2951,63.014302 c -4.02167,0 -8.14917,1.481667 -11.21833,4.656666 -6.24417,6.244167 -6.24417,16.298334 0,22.436665 6.24416,6.244166 16.29833,6.244166 22.43666,0 6.13833,-6.244165 6.24417,-16.298331 0,-22.436665 -3.06916,-3.174999 -7.09083,-4.656666 -11.21833,-4.656666 z m 0,5.291666 c 1.79917,0 3.70417,0.529167 5.3975,1.481667 l -14.49917,14.499167 c -2.43416,-4.021667 -1.79916,-9.419167 1.69334,-12.911667 2.01083,-2.116667 4.65666,-3.069167 7.40833,-3.069167 z m 9.10167,5.185834 c 2.43416,4.021666 1.79916,9.419166 -1.69334,12.911666 -3.4925,3.492498 -8.78416,4.021665 -12.91166,1.5875 z" style="stroke-width:1.05833" sodipodi:nodetypes="sccscsscccscscc"></path>
+                                    </g>
+                                </svg></span>
+                                <span class="card-brief">Skip</span>
+                                <span class="card-description">This skips the next person.</span>
+                        </div>
+                        <div class="icons">
+                            <img src="pickup.svg">
+                            <img src="stack.svg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card card-red">
+                        <div class="card-front">
+                            <span class="card-title"><svg
+                                  xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                  xmlns:cc="http://creativecommons.org/ns#"
+                                  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                  xmlns:svg="http://www.w3.org/2000/svg"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                  width="21.16667mm"
+                                  height="34.395828mm"
+                                  viewBox="0 0 21.16667 34.395828"
+                                  version="1.1"
+                                  id="svg503"
+                                  inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+                                  sodipodi:docname="reverse.svg">
+                                    <g
+                                        inkscape:label="Layer 1"
+                                        inkscape:groupmode="layer"
+                                        id="layer1"
+                                        transform="translate(147.41072,-239.82589)">
+                                    <path
+                                        id="g6643-0"
+                                        d="m -136.82739,239.82589 2.64584,2.64583 -10.58333,10.58334 c -2.64584,2.64583 -2.64584,7.9375 0,10.58333 l 5.29166,-5.29167 10.58333,-10.58333 2.64584,2.64583 v -10.58333 z m 0,34.39583 -2.64583,-2.64583 10.58333,-10.58333 c 2.64584,-2.64584 2.64584,-7.9375 0,-10.58334 l -5.29166,5.29167 -10.58333,10.58333 -2.64584,-2.64583 v 10.58333 z"
+                                        style="stroke-width:1.05833"
+                                        sodipodi:nodetypes="ccsccccccccscccccc" />
+                                    </g>
+                                </svg></span>
+                                <span class="card-brief">Reverse</span>
+                                <span class="card-description">Reverses the direction of play.</span>
+                        </div>
+                        <div class="icons">
+                            <img src="pickup.svg">
+                            <img src="stack.svg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card card-green">
+                        <div class="card-front">
+                            <span class="card-title">+2</span>
+                            <span class="card-brief">Pick Up Two</span>
+                            <span class="card-description">Pick up two cards. Stacks with 2 and +4.</span>
+                        </div>
+                        <div class="icons">
+                            <img src="pickup.svg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card card-black">
+                        <div class="card-front">
+                            <span class="card-title">+4</span>
+                            <span class="card-brief">Pick Up Four</span>
+                            <span class="card-description">Pick up four cards. Stacks with 2 and +2.</span>
+                        </div>
+                        <div class="icons">
+                            <img src="pickup.svg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card card-black">
+                        <div class="card-front">
+                            <span class="card-title">
+                                <svg
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                    xmlns:svg="http://www.w3.org/2000/svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                    version="1.1"
+                                    id="svg2"
+                                    x="0px"
+                                    y="0px"
+                                    viewBox="0 0 150.90152 150.39999"
+                                    xml:space="preserve"
+                                    sodipodi:docname="wild.svg"
+                                    width="150.90152"
+                                    height="150.39999"
+                                    inkscape:version="1.0.2 (e86c870879, 2021-01-15)"><metadata
+                                                                                          id="metadata208"><rdf:RDF><cc:Work
+                                                                                          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+                                                                                          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+                                                                                                                                                                                     id="defs206" /><sodipodi:namedview
+                                                                                                                                                                                     pagecolor="#ffffff"
+                                                                                                                                                                                     bordercolor="#666666"
+                                                                                                                                                                                     borderopacity="1"
+                                                                                                                                                                                     objecttolerance="10"
+                                                                                                                                                                                     gridtolerance="10"
+                                                                                                                                                                                     guidetolerance="10"
+                                                                                                                                                                                     inkscape:pageopacity="0"
+                                                                                                                                                                                     inkscape:pageshadow="2"
+                                                                                                                                                                                     inkscape:window-width="1920"
+                                                                                                                                                                                     inkscape:window-height="1020"
+                                                                                                                                                                                     id="namedview204"
+                                                                                                                                                                                     showgrid="false"
+                                                                                                                                                                                     inkscape:zoom="5.4720745"
+                                                                                                                                                                                     inkscape:cx="44.65801"
+                                                                                                                                                                                     inkscape:cy="75.20004"
+                                                                                                                                                                                     inkscape:window-x="0"
+                                                                                                                                                                                     inkscape:window-y="0"
+                                                                                                                                                                                     inkscape:window-maximized="1"
+                                                                                                                                                                                     inkscape:current-layer="g6111-38-2-3" />
+                                                                                                                                                                                     <style
+                                                                                                                                                                                         type="text/css"
+                                                                                                                                                                                         id="style128">
+.st0{fill-rule:evenodd;clip-rule:evenodd;}
+.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+.st2{fill:#FFFFFF;}
+.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#FF5555;}
+.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#5555FF;}
+.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#FFAA00;}
+.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#55AA55;}
+.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#00AA00;}
+.st8{fill:none;stroke:#FFFFFF;stroke-width:4;}
+                                                                                                                                                                                     </style>
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="g6563"
+                                                                                                                                                                                         d="m -4676.8468,123.59096 -20,20 v 24 l 20,-20 v 96 h 20 v -120 z m -52,160 c -22,0 -40,-18 -40,-40 v 80 c 0,11.2 8.8,20 20,20 h 160 c 11.2,0 20,-8.8 20,-20 v -200 c 0,88.4 -71.6,160 -160,160 z m 130,-10 h 10 v 48 l 10,-10 v 12 l -10,10 h -10 z m 10,-250 h -160 c -11.2,0 -20,8.8 -20,20 v 200 c 0,-88.4 71.6,-160 160,-160 22,0 40,18 40,40 v -80 c 0,-11.2 -8.8,-20 -20,-20 z m -150,70 h -10 v -48 l -10,10 v -12 l 10,-10 h 10 z"
+                                                                                                                                                                                         style="stroke-width:4" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         class="st0"
+                                                                                                                                                                                         d="m -4965.2468,123.47746 c -22,0 -40,18 -40,40 v 40 c 0,22 18,40 40,40 22,0 40,-18 40,-40 v -40 c 0,-22.4 -18,-40 -40,-40 z m 20,80 c 0,11.2 -8.8,20 -20,20 -11.2,0 -20,-8.8 -20,-20 v -40 c 0,-11.2 8.8,-20 20,-20 11.2,0 20,8.8 20,20 z m -80,-150 v 20 c 0,5.6 -4.4,10 -10,10 -5.6,0 -10,-4.4 -10,-10 v -20 c 0,-5.6 4.4,-10 10,-10 5.2,0 10,4.4 10,10 z m 0,230 c -22,0 -40,-18 -40,-40 v 80 c 0,11.2 8.8,20 20,20 h 160 c 11.2,0 20,-8.8 20,-20 v -200 c 0,88.4 -72,160 -160,160 z m 130,-10 c 11.2,0 20,8.8 20,20 v 20 c 0,11.2 -8.8,20 -20,20 -11.2,0 -20,-8.8 -20,-20 v -20 c 0,-11.2 8.8,-20 20,-20 z m -10,40 v -20 c 0,-5.6 4.4,-10 10,-10 5.6,0 10,4.4 10,10 v 20 c 0,5.6 -4.4,10 -10,10 -5.6,0 -10,-4.4 -10,-10 z m 20,-290 h -160 c -11.2,0 -20,8.8 -20,20 v 200 c 0,-88.4 71.6,-160 160,-160 22,0 40,18 40,40 v -80 c 0,-11.2 -9.2,-20 -20,-20 z m -130,50 c 0,11.2 -8.8,20 -20,20 -11.2,0 -20,-8.8 -20,-20 v -20 c 0,-11.2 8.8,-20 20,-20 11.2,0 20,8.8 20,20 z"
+                                                                                                                                                                                         id="path131" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="g6611"
+                                                                                                                                                                                         d="m -2922.4468,123.59096 v 40 h 20 v -20 h 40 l -40,100 h 20 l 40,-100 v -20 h -60 z m -26,160 c -22,0 -40,-18 -40,-40 v 80 c 0,11.2 8.8,20 20,20 h 160 c 11.2,0 20,-8.8 20,-20 v -200 c 0,88.4 -71.6,160 -160,160 z m 140,-10 -20,50 h 20 v -10 h 10 v 20 h -10 -30 v -10 l 20,-50 z m 0,-250 h -160 c -10.8,0 -20,8.8 -20,20 v 200 c 0,-88.4 71.6,-160 160,-160 22.4,0 40,17.6 40,40 v -80 c 0,-11.2 -8.8,-20 -20,-20 z m -130,20 -20,50 h -10 l 20,-50 h -20 v 10 h -10 v -20 h 10 30 z"
+                                                                                                                                                                                         style="stroke-width:4" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="g6571"
+                                                                                                                                                                                         d="m -4376.0468,123.59096 c -22,0 -40,18 -40,40 v 4 h 20 v -4 c 0,-11.2 8.8,-20 20,-20 11.2,0 20,8.8 20,20 0,4.4 -3.6,13.2 -7.6,16.4 -21.2,16.8 -20.8,14 -52.4,35.6 v 28 h 40 40 v -20 -8 h -20 v 8 h -20 -16 c 24.8,-17.6 26.4,-17.2 46,-34.4 6.4,-5.6 10,-16.8 10,-25.6 0,-22.4 -18,-40 -40,-40 z m -56,160 c -22,0 -40,-18 -40,-40 v 80 c 0,11.2 8.8,20 20,20 h 160 c 11.2,0 20,-8.8 20,-20 v -200 c 0,88.4 -71.6,160 -160,160 z m 150,-10 v 14 c -15.6,10.8 -15.6,9.6 -26,17.6 -2,1.6 -4,6 -4,8.4 0,5.6 4.4,10 10,10 5.6,0 10,-4.4 10,-10 v -2 h 10 v 2 c 0,11.2 -8.8,20 -20,20 -11.2,0 -20,-8.8 -20,-20 0,-4.4 2,-10 5.2,-12.8 9.6,-8.8 10.8,-8.4 22.8,-17.2 h -8 -10 v 4 h -10 v -4 -10 h 20 z m -10,-250 h -160 c -11.2,0 -20,8.8 -20,20 v 200 c 0,-88.4 71.6,-160 160,-160 22,0 40,18 40,40 v -80 c 0,-11.2 -9.2,-20 -20,-20 z m -150,60 h 10 v -4 h 10 v 4 10 h -20 -20 v -14 c 15.6,-10.8 15.6,-9.6 26,-17.6 2,-1.6 4,-6 4,-8.4 0,-5.6 -4.4,-10 -10,-10 -5.6,0 -10,4.4 -10,10 v 2 h -10 v -2 c 0,-11.2 8.8,-20 20,-20 11.2,0 20,8.8 20,20 0,4.4 -2,10 -5.2,12.8 -9.6,8.8 -10.8,8.4 -22.8,17.2 z"
+                                                                                                                                                                                         style="stroke-width:4" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="g6579"
+                                                                                                                                                                                         d="m -4075.2468,123.59096 c -16.4,0 -30,13.6 -30,30 h 20 c 0,-5.6 4.4,-10 10,-10 5.6,0 10,4.4 10,10 0,5.6 -4.4,10 -10,10 h -12 v 20 h 12 c 11.2,0 20,8.8 20,20 0,11.2 -8.8,20 -20,20 -11.2,0 -20,-8.8 -20,-20 h -20 c 0,22 18,40 40,40 22,0 40,-18 40,-40 0,-13.2 -6.4,-24.8 -16,-32 4,-5.2 6,-11.2 6,-18 0,-16.8 -13.6,-30 -30,-30 z m -60,160 c -22,0 -40,-18 -40,-40 v 80 c 0,11.2 8.8,20 20,20 h 160 c 11.2,0 20,-8.8 20,-20 v -200 c 0,88.4 -71.6,160 -160,160 z m 130.4,-10 c 11.2,0 20,8.8 20,20 h -10 c 0,-5.6 -4.4,-10 -10,-10 -5.6,0 -10,4.4 -10,10 0,5.6 4.4,10 10,10 h 6 v 10 h -6 c -2.4,0 -4.8,2 -4.8,4.8 0,2.4 2.4,4.8 4.8,4.8 2.4,0 4.8,-2 4.8,-4.8 h 10 c 0,8.4 -6.8,15.2 -15.2,15.2 -8.4,0 -14.8,-6.8 -14.8,-15.2 0,-3.2 1.2,-6.4 3.2,-8.8 -4.8,-3.6 -8,-9.6 -8,-16 0,-11.2 8.8,-20 20,-20 z m 9.6,-250 h -160 c -11.2,0 -20,8.8 -20,20 v 200 c 0,-88.4 71.6,-160 160,-160 22,0 40,17.6 40,40 v -80 c 0,-11.2 -8.8,-20 -20,-20 z m -150.4,70 c -11.2,0 -20,-8.8 -20,-20 h 10 c 0,5.6 4.4,10 10,10 5.6,0 10,-4.4 10,-10 0,-5.6 -4.4,-10 -10,-10 h -6 v -10 h 6 c 2.4,0 4.8,-2.4 4.8,-4.8 0,-2.4 -2.4,-4.8 -4.8,-4.8 -2.4,0 -4.8,2 -4.8,4.8 h -10 c 0,-8.4 6.8,-15.2 15.2,-15.2 8.4,0 15.2,6.8 14.8,15.2 0,3.2 -1.2,6.4 -3.2,8.8 4.8,3.6 8,9.6 8,16 0,11.2 -8.8,20 -20,20 z"
+                                                                                                                                                                                         style="stroke-width:4" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="g6587"
+                                                                                                                                                                                         d="m -3783.2468,123.59096 -39.2,80 v 20 h 48 v 20 h 20 v -20 h 12 v -20 h -12 v -40 h -20 v 40 h -27.2 l 39.2,-80 z m -55.2,160 c -22,0 -40,-18 -40,-40 v 80 c 0,11.2 8.8,20 20,20 h 160 c 11.2,0 20,-8.8 20,-20 v -200 c 0,88.4 -71.6,160 -160,160 z m 115.6,-10 h 10 v 10 h 24 v 10 l -19.6,40 h -10.4 l 19.6,-40 h -13.6 v 20 h -10 v -20 h -6 v -10 h 6 z m 24.4,-250 h -160 c -11.2,0 -20,8.8 -20,20 v 200 c 0,-88.4 71.6,-160 160,-160 22,0 40,17.6 40,40 v -80 c 0,-11.2 -8.8,-20 -20,-20 z m -130.4,60 h -6 v 10 h -10 v -10 h -24 v -10 l 19.6,-40 h 10.4 l -19.6,40 h 13.6 v -20 h 10 v 20 h 6 z"
+                                                                                                                                                                                         style="stroke-width:4" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="g6595"
+                                                                                                                                                                                         d="m -3517.6468,123.59096 v 40 20 h 40 c 11.2,0 20,8.8 20,20 0,11.2 -8.8,20 -20,20 -11.2,0 -20,-8.8 -20,-20 h -20 c 0,22 18,40 40,40 22,0 40,-18 40,-40 0,-22 -18,-40 -40,-40 h -20 v -20 h 20 36 v -20 h -36 -20 z m -24,160 c -22,0 -40,-18 -40,-40 v 80 c 0,11.2 8.8,20 20,20 h 160 c 11.2,0 20,-8.8 20,-20 v -200 c 0,88.4 -71.6,160 -160,160 z m 130,-10 c 11.2,0 20,8.8 20,20 h -10 c 0,-5.6 -4.4,-10 -10,-10 -5.6,0 -10,4.4 -10,10 0,5.6 4.4,10 10,10 h 20 v 10 20 h -10 -10 -18 v -10 h 18 10 v -10 h -10 c -11.2,0 -20,-8.8 -20,-20 0,-11.2 8.8,-20 20,-20 z m 10,-250 h -160 c -11.2,0 -20,8.8 -20,20 v 200 c 0,-88.4 71.6,-160 160,-160 22,0 40,17.6 40,40 v -80 c 0,-11.2 -8.8,-20 -20,-20 z m -150,70 c -11.2,0 -20,-8.8 -20,-20 h 10 c 0,5.6 4.4,10 10,10 5.6,0 10,-4.4 10,-10 0,-5.6 -4.4,-10 -10,-10 h -20 v -10 -20 h 10 10 18 v 10 h -18 -10 v 10 h 10 c 11.2,0 20,8.8 20,20 0,11.2 -8.8,20 -20,20 z"
+                                                                                                                                                                                         style="stroke-width:4" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="g6603"
+                                                                                                                                                                                         d="m -3184.8468,123.59096 c -22,0 -40,18 -40,40 v 40 c 0,22 18,40 40,40 22,0 40,-18 40,-40 0,-22 -18,-40 -40,-40 -7.2,0 -14,2 -20,5.2 v -5.2 c 0,-11.2 8.8,-20 20,-20 8,0 14.4,4.4 17.6,11.2 l 18,-8.8 c -6.4,-13.6 -20,-22.4 -35.6,-22.4 z m 0,60 c 11.2,0 20,8.8 20,20 0,11.2 -8.8,20 -20,20 -11.2,0 -20,-8.8 -20,-20 0,-11.2 8.8,-20 20,-20 z m -60,-110 c 0,5.6 -4.4,10 -10,10 -5.6,0 -10,-4.4 -10,-10 0,-5.6 4.4,-10 10,-10 5.6,0 10,4.4 10,10 z m 120,220 c 0,-5.6 4.4,-10 10,-10 5.6,0 10,4.4 10,10 0,5.6 -4.8,10 -10,10 -5.6,0 -10,-4.4 -10,-10 z m -120,-10 c -22,0 -40,-18 -40,-40 v 80 c 0,11.2 8.8,20 20,20 h 160 c 11.2,0 20,-8.8 20,-20 v -200 c 0,88.4 -71.6,160 -160,160 z m 130,-10 c 11.2,0 20,8.8 20,20 v 20 c 0,11.2 -8.8,20 -20,20 -8,0 -14.8,-4.8 -17.6,-11.2 l 8.8,-4.4 c 1.6,3.2 4.8,5.6 8.8,5.6 5.6,0 10,-4.4 10,-10 v -2.8 c -2.8,2 -6.4,2.8 -10,2.8 -11.2,0 -20,-8.8 -20,-20 0,-11.2 8.8,-20 20,-20 z m 10,-250 h -160 c -11.2,0 -20,8.8 -20,20 v 200 c 0,-88.4 71.6,-160 160,-160 22,0 40,17.6 40,40 v -80 c 0,-11.2 -8.8,-20 -20,-20 z m -150,70 c -11.2,0 -20,-8.8 -20,-20 v -20 c 0,-11.2 8.8,-20 20,-20 7.6,0 14.4,4.4 17.6,11.2 l -8.8,4.4 c -1.6,-3.2 -4.8,-5.6 -8.8,-5.6 -5.6,0 -10,4.4 -10,10 v 2.8 c 2.8,-2 6.4,-2.8 10,-2.8 11.2,0 20,8.8 20,20 0,11.2 -8.8,20 -20,20 z"
+                                                                                                                                                                                         style="stroke-width:4" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="g6619"
+                                                                                                                                                                                         d="m -2591.6468,123.59096 c -16.4,0 -30,13.6 -30,30 0,6.8 2.4,12.8 6,18 -9.6,7.2 -16,18.8 -16,32 0,22 18,40 40,40 22,0 40,-18 40,-40 0,-13.2 -6.4,-24.8 -16,-32 4,-5.2 6,-11.2 6,-18 0,-16.8 -13.2,-30 -30,-30 z m 0,20 c 5.6,0 10,4.4 10,10 0,5.6 -4.4,10 -10,10 -5.6,0 -10,-4.4 -10,-10 0,-5.6 4.4,-10 10,-10 z m -2,40 c 0.8,0 1.2,0 2,0 11.2,0 20,8.8 20,20 0,11.2 -8.8,20 -20,20 -11.2,0 -20,-8.8 -20,-20 0,-10.4 8,-19.2 18,-20 z m -72.8,-135.2 c 0,-2.8 2,-4.8 4.8,-4.8 2.8,0 4.8,2.4 4.8,4.8 0,2.8 -2.4,4.8 -4.8,4.8 -2.4,0 -4.8,-2.4 -4.8,-4.8 z m 149.6,270.4 c 0,2.4 -2,4.8 -4.8,4.8 -2.8,0 -4.8,-2.4 -4.8,-4.8 0,-2.4 2.4,-4.8 4.8,-4.8 2.4,0 4.8,2 4.8,4.8 z m 5.2,-295.2 h -160 c -10.8,0 -20,8.8 -20,20 v 200 c 0,-88.4 71.6,-160 160,-160 22.4,0 40,17.6 40,40 v -80 c 0,-11.2 -8.8,-20 -20,-20 z m -150,70 c -11.2,0 -20,-8.8 -20,-20 0,-6.4 3.2,-12.4 8,-16 -2,-2.4 -3.2,-5.6 -3.2,-8.8 0,-8.4 6.8,-15.2 15.2,-15.2 8.4,0 15.2,6.8 15.2,15.2 0,3.2 -1.2,6.4 -3.2,8.8 4.8,3.6 8,9.6 8,16 0,11.2 -8.8,20 -20,20 z m 10,190 c -22,0 -40,-18 -40,-40 v 80 c 0,11.2 8.8,20 20,20 h 160 c 11.2,0 20,-8.8 20,-20 v -200 c 0,88.4 -71.6,160 -160,160 z m 130,-10 c 11.2,0 20,8.8 20,20 0,6.4 -3.2,12.4 -8,16 2,2.4 3.2,5.6 3.2,8.8 0,8.4 -6.8,15.2 -15.2,15.2 -8.4,0 -15.2,-6.8 -15.2,-15.2 0,-3.2 1.2,-6.4 3.2,-8.8 -4.8,-3.6 -8,-9.6 -8,-16 0,-11.2 8.8,-20 20,-20 z m -130,-200 c 0,5.6 -4.4,10 -10,10 -5.6,0 -10,-4.4 -10,-10 0,-5.2 4,-9.6 9.2,-10 0.4,0 0.8,0 0.8,0 5.6,0 10,4.4 10,10 z m 120,220 c 0,-5.6 4.4,-10 10,-10 5.6,0 10,4.4 10,10 0,5.6 -4.4,10 -10,10 0,0 -0.4,0 -0.8,0 -5.2,-0.8 -9.2,-4.8 -9.2,-10 z"
+                                                                                                                                                                                         style="stroke-width:4" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="g6627"
+                                                                                                                                                                                         d="m -2294.8468,123.59096 c -22,0 -40,18 -40,40 0,22 18,40 40,40 7.2,0 14,-2 20,-5.2 v 5.2 c 0,11.2 -8.8,20 -20,20 -8,0 -14.4,-4.4 -17.6,-11.2 l -18,8.8 c 6.4,13.2 20,22 35.6,22 22,0 40,-18 40,-40 v -40 c 0,-22 -18,-39.6 -40,-39.6 z m 0,20 c 11.2,0 20,8.8 20,20 0,11.2 -8.8,20 -20,20 -11.2,0 -20,-8.8 -20,-20 0,-11.2 9.2,-20 20,-20 z m -60,-90 c 0,5.6 -4.4,10 -10,10 -5.6,0 -10,-4.4 -10,-10 0,-5.6 4.4,-10 10,-10 5.6,0 10,4.4 10,10 z m 120,260 c 0,-5.6 4.4,-10 10,-10 5.6,0 10,4.4 10,10 0,5.6 -4.4,10 -10,10 -5.6,0 -10,-4.4 -10,-10 z m -120,-30 c -22,0 -40,-18 -40,-40 v 80 c 0,11.2 8.8,20 20,20 h 160 c 11.2,0 20,-8.8 20,-20 v -200 c 0,88.4 -71.6,160 -160,160 z m 130,-10 c 8,0 14.8,4.4 17.6,11.2 l -8.8,4.4 c -1.6,-3.2 -4.8,-5.6 -8.8,-5.6 -5.6,0 -10,4.4 -10,10 v 2.8 c 2.8,-2 6.4,-2.8 10,-2.8 11.2,0 20,8.8 20,20 0,11.2 -8.8,20 -20,20 -11.2,0 -20,-8.8 -20,-20 v -20 c 0,-11.2 8.8,-20 20,-20 z m 10,-250 h -160 c -10.8,0 -20,8.8 -20,20 v 200 c 0,-88.4 71.6,-160 160,-160 22,0 40,17.6 40,40 v -80 c 0,-11.2 -8.8,-20 -20,-20 z m -130,50 c 0,11.2 -8.8,20 -20,20 -7.6,0 -14.4,-4.8 -17.6,-11.2 l 8.8,-4.4 c 1.6,3.2 4.8,5.6 8.8,5.6 5.6,0 10,-4.4 10,-10 v -2.8 c -2.8,2 -6.4,2.8 -10,2.8 -11.2,0 -20,-8.8 -20,-20 0,-11.2 8.8,-20 20,-20 11.2,0 20,8.8 20,20 z"
+                                                                                                                                                                                         style="stroke-width:4" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="g6635"
+                                                                                                                                                                                         d="m -1998.0468,123.19096 c -15.2,0 -30.8,5.6 -42.4,17.6 -23.6,23.6 -23.6,61.6 0,84.8 23.6,23.6 61.6,23.6 84.8,0 23.2,-23.6 23.6,-61.6 0,-84.8 -11.6,-12 -26.8,-17.6 -42.4,-17.6 z m 0,20 c 6.8,0 14,2 20.4,5.6 l -54.8,54.8 c -9.2,-15.2 -6.8,-35.6 6.4,-48.8 7.6,-8 17.6,-11.6 28,-11.6 z m 34.4,19.6 c 9.2,15.2 6.8,35.6 -6.4,48.8 -13.2,13.2 -33.2,15.2 -48.8,6 z m -84.4,-116.8 -27.2,27.2 c -4.4,-7.6 -3.6,-17.6 3.2,-24.4 3.6,-4 8.8,-5.6 14,-5.6 3.6,0 7.2,0.8 10,2.8 z m 92.8,267.2 c -4.4,-7.6 -3.6,-17.6 3.2,-24.4 3.6,-4 8.8,-5.6 14,-5.6 3.6,0 7.2,0.8 10,2.8 z m -102.8,-30 c -22,0 -40,-18 -40,-40 v 80 c 0,11.2 8.8,20 20,20 h 160 c 11.2,0 20,-8.8 20,-20 v -200 c 0,88.4 -71.6,160 -160,160 z m 141.2,-1.2 c 11.6,11.6 11.6,30.8 0,42.4 -11.6,11.6 -30.8,11.6 -42.4,0 -11.6,-11.6 -11.6,-30.8 0,-42.4 6,-6 13.6,-8.8 21.2,-8.8 7.6,0 15.2,2.8 21.2,8.8 z m -1.2,-258.8 h -160 c -11.2,0 -20,8.8 -20,20 v 200 c 0,-88.4 71.6,-160 160,-160 22,0 40,17.6 40,40 v -80 c 0,-11.2 -8.8,-20 -20,-20 z m -118.8,61.2 c -11.6,11.6 -30.8,11.6 -42.4,0 -11.6,-11.6 -11.6,-30.8 0,-42.4 6,-6 13.6,-8.8 21.2,-8.8 7.6,0 15.2,2.8 21.2,8.8 11.6,11.6 11.6,30.8 0,42.4 z m -4,-31.6 c 4.4,7.6 3.6,17.6 -3.2,24.4 -6.8,6.4 -16.8,7.6 -24.4,2.8 z m 92.4,267.2 27.6,-27.2 c 4.4,7.6 3.6,17.6 -3.2,24.4 -6.8,6.4 -16.8,7.6 -24.4,2.8 z"
+                                                                                                                                                                                         style="stroke-width:4" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="g6643"
+                                                                                                                                                                                         d="m -1701.2468,118.39096 10,10 -40,40 c -10,10 -10,30 0,40 l 20,-20 40,-40 10,10 v -40 z m 0,130 -10,-10 40,-40 c 10,-10 10,-30 0,-40 l -20,20 -40,40 -10,-10 v 40 z m -60,35.2 c -22,0 -40,-18 -40,-40 v 80 c 0,11.2 8.8,20 20,20 h 160 c 11.2,0 20,-8.8 20,-20 v -200 c 0,88.4 -71.6,160 -160,160 z m 145.2,25.2 -20,20 4.8,4.8 v 0.4 h -19.6 v -20 l 4.8,4.8 20,-20 10,-10 c 4.8,4.8 4.8,15.2 0,20 z m -15.2,-40.4 v 0 l 19.6,-0.4 v 20 l -4.8,-4.8 -20,20 -10,10 c -4.8,-4.8 -4.8,-15.2 0,-20 l 20,-20 z m 10,-244.8 h -160 c -11.2,0 -20,8.8 -20,20 v 200 c 0,-88.4 71.6,-160 160,-160 22,0 40,17.6 40,40 v -80 c 0,-11.2 -8.8,-20 -20,-20 z m -134.8,50 -20,20 4.8,4.8 v 0.4 h -19.6 v -20 l 4.8,4.8 20,-20 10,-10 c 4.8,4.8 4.8,15.2 0,20 z m 4.4,-20.4 -4.8,-4.8 -20,20 -10,10 c -4.8,-4.8 -4.8,-15.2 0,-20 l 20,-20 -4.8,-4.8 v -0.4 h 19.6 z"
+                                                                                                                                                                                         style="stroke-width:4" />
+                                                                                                                                                                                     <g
+                                                                                                                                                                                         id="g6694"
+                                                                                                                                                                                         transform="matrix(4,0,0,4,-1557.9527,-2172.6092)">
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="rect3757-26-33-5-9-9"
+                                                                                                                                                                                         class="st0"
+                                                                                                                                                                                         d="m 320,519.3 h 40 c 2.8,0 5,2.2 5,5 v 70 c 0,2.8 -2.2,5 -5,5 h -40 c -2.8,0 -5,-2.2 -5,-5 v -70 c 0,-2.8 2.3,-5 5,-5 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-4-60-3-86-5-6"
+                                                                                                                                                                                         class="st1"
+                                                                                                                                                                                         d="m 355,534.3 c -22.1,0 -40,17.9 -40,40 0,5.5 4.5,10 10,10 22.1,0 40,-17.9 40,-40 0,-5.6 -4.5,-10 -10,-10 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="rect3980-7-6-2-9-5-60-5-3-1-5"
+                                                                                                                                                                                         class="st2"
+                                                                                                                                                                                         d="m 329.9,521.8 -4.9,10 v 2.5 h 6 v 2.5 h 2.5 v -2.5 h 1.5 v -2.5 h -1.5 v -5 H 331 v 5 h -3.4 l 4.9,-10 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="rect5649-4"
+                                                                                                                                                                                         class="st1"
+                                                                                                                                                                                         d="m 318.5,526.8 v 2.5 H 316 v 2.5 h 2.5 v 2.5 h 2.5 v -2.5 h 2.5 v -2.5 H 321 v -2.5 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="rect3980-7-6-2-9-5-60-5-3-1-8-9"
+                                                                                                                                                                                         class="st2"
+                                                                                                                                                                                         d="m 350.1,596.8 4.9,-10 v -2.5 h -6 v -2.5 h -2.5 v 2.5 H 345 v 2.5 h 1.5 v 5 h 2.5 v -5 h 3.4 l -4.9,10 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="rect5649-1-1"
+                                                                                                                                                                                         class="st1"
+                                                                                                                                                                                         d="m 361.5,591.8 v -2.5 h 2.5 v -2.5 h -2.5 v -2.5 H 359 v 2.5 h -2.5 v 2.5 h 2.5 v 2.5 z" />
+                                                                                                                                                                                     <g
+                                                                                                                                                                                         id="g6111-38-2"
+                                                                                                                                                                                         transform="translate(119.99999,429.99998)">
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="rect6095-2-9"
+                                                                                                                                                                                         class="st1"
+                                                                                                                                                                                         d="m 210.7,116.8 h 10 c 1.4,0 2.2,1 1.9,2.3 l -5.1,18 c -0.4,1.2 -1.8,2.3 -3.1,2.3 h -10 c -1.4,0 -2.2,-1 -1.9,-2.3 l 5.1,-18 c 0.3,-1.3 1.8,-2.3 3.1,-2.3 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="rect6097-5-7"
+                                                                                                                                                                                         class="st3"
+                                                                                                                                                                                         d="m 212.5,119.3 h 5 c 1.4,0 2.2,1 1.9,2.3 l -3.7,13 c -0.4,1.2 -1.8,2.3 -3.1,2.3 h -5 c -1.4,0 -2.2,-1 -1.9,-2.3 l 3.7,-13 c 0.3,-1.3 1.7,-2.3 3.1,-2.3 z" />
+                                                                                                                                                                                     </g>
+                                                                                                                                                                                     <g
+                                                                                                                                                                                         id="g6111-62-2-1"
+                                                                                                                                                                                         transform="translate(129.99998,422.49998)">
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="rect6095-14-0-3"
+                                                                                                                                                                                         class="st1"
+                                                                                                                                                                                         d="m 210.7,116.8 h 10 c 1.4,0 2.2,1 1.9,2.3 l -5.1,18 c -0.4,1.2 -1.8,2.3 -3.1,2.3 h -10 c -1.4,0 -2.2,-1 -1.9,-2.3 l 5.1,-18 c 0.3,-1.3 1.8,-2.3 3.1,-2.3 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="rect6097-6-3-2"
+                                                                                                                                                                                         class="st4"
+                                                                                                                                                                                         d="m 212.5,119.3 h 5 c 1.4,0 2.2,1 1.9,2.3 l -3.7,13 c -0.4,1.2 -1.8,2.3 -3.1,2.3 h -5 c -1.4,0 -2.2,-1 -1.9,-2.3 l 3.7,-13 c 0.3,-1.3 1.7,-2.3 3.1,-2.3 z" />
+                                                                                                                                                                                     </g>
+                                                                                                                                                                                     <g
+                                                                                                                                                                                         id="g6111-3-5"
+                                                                                                                                                                                         transform="translate(127.49999,437.49998)">
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="rect6095-0-3"
+                                                                                                                                                                                         class="st1"
+                                                                                                                                                                                         d="m 210.7,116.8 h 10 c 1.4,0 2.2,1 1.9,2.3 l -5.1,18 c -0.4,1.2 -1.8,2.3 -3.1,2.3 h -10 c -1.4,0 -2.2,-1 -1.9,-2.3 l 5.1,-18 c 0.3,-1.3 1.8,-2.3 3.1,-2.3 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="rect6097-7-4"
+                                                                                                                                                                                         class="st5"
+                                                                                                                                                                                         d="m 212.5,119.3 h 5 c 1.4,0 2.2,1 1.9,2.3 l -3.7,13 c -0.4,1.2 -1.8,2.3 -3.1,2.3 h -5 c -1.4,0 -2.2,-1 -1.9,-2.3 l 3.7,-13 c 0.3,-1.3 1.7,-2.3 3.1,-2.3 z" />
+                                                                                                                                                                                     </g>
+                                                                                                                                                                                     <g
+                                                                                                                                                                                         id="g6111-62-7-3"
+                                                                                                                                                                                         transform="translate(137.49998,429.99999)">
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="rect6095-14-8-2"
+                                                                                                                                                                                         class="st1"
+                                                                                                                                                                                         d="m 210.7,116.8 h 10 c 1.4,0 2.2,1 1.9,2.3 l -5.1,18 c -0.4,1.2 -1.8,2.3 -3.1,2.3 h -10 c -1.4,0 -2.2,-1 -1.9,-2.3 l 5.1,-18 c 0.3,-1.3 1.8,-2.3 3.1,-2.3 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="rect6097-6-7-1"
+                                                                                                                                                                                         class="st6"
+                                                                                                                                                                                         d="m 212.5,119.3 h 5 c 1.4,0 2.2,1 1.9,2.3 l -3.7,13 c -0.4,1.2 -1.8,2.3 -3.1,2.3 h -5 c -1.4,0 -2.2,-1 -1.9,-2.3 l 3.7,-13 c 0.3,-1.3 1.7,-2.3 3.1,-2.3 z" />
+                                                                                                                                                                                     </g>
+                                                                                                                                                                                     <g
+                                                                                                                                                                                         id="g6111-38-2-3"
+                                                                                                                                                                                         transform="translate(187.05086,433.85231)"><path
+                                                                                                                                                                                         id="rect6095-2-9-6"
+                                                                                                                                                                                         class="st1"
+                                                                                                                                                                                         d="m 210.7,116.8 h 10 c 1.4,0 2.2,1 1.9,2.3 l -5.1,18 c -0.4,1.2 -1.8,2.3 -3.1,2.3 h -10 c -1.4,0 -2.2,-1 -1.9,-2.3 l 5.1,-18 c 0.3,-1.3 1.8,-2.3 3.1,-2.3 z" /><path
+                                                                                                                                                                                         id="rect6097-5-7-7"
+                                                                                                                                                                                         class="st3"
+                                                                                                                                                                                         d="m 212.5,119.3 h 5 c 1.4,0 2.2,1 1.9,2.3 l -3.7,13 c -0.4,1.2 -1.8,2.3 -3.1,2.3 h -5 c -1.4,0 -2.2,-1 -1.9,-2.3 l 3.7,-13 c 0.3,-1.3 1.7,-2.3 3.1,-2.3 z"
+                                                                                                                                                                                         style="fill:#e73d3d;fill-opacity:1" /></g><g
+                                                                                                                                                                                         id="g6111-62-2-1-5"
+                                                                                                                                                                                         transform="translate(197.05085,426.35231)"><path
+                                                                                                                                                                                         id="rect6095-14-0-3-3"
+                                                                                                                                                                                         class="st1"
+                                                                                                                                                                                         d="m 210.7,116.8 h 10 c 1.4,0 2.2,1 1.9,2.3 l -5.1,18 c -0.4,1.2 -1.8,2.3 -3.1,2.3 h -10 c -1.4,0 -2.2,-1 -1.9,-2.3 l 5.1,-18 c 0.3,-1.3 1.8,-2.3 3.1,-2.3 z" /><path
+                                                                                                                                                                                         id="rect6097-6-3-2-5"
+                                                                                                                                                                                         class="st4"
+                                                                                                                                                                                         d="m 212.5,119.3 h 5 c 1.4,0 2.2,1 1.9,2.3 l -3.7,13 c -0.4,1.2 -1.8,2.3 -3.1,2.3 h -5 c -1.4,0 -2.2,-1 -1.9,-2.3 l 3.7,-13 c 0.3,-1.3 1.7,-2.3 3.1,-2.3 z"
+                                                                                                                                                                                         style="fill:#855d10;fill-opacity:1" /></g><g
+                                                                                                                                                                                         id="g6111-3-5-6"
+                                                                                                                                                                                         transform="translate(194.55086,441.35231)"><path
+                                                                                                                                                                                         id="rect6095-0-3-2"
+                                                                                                                                                                                         class="st1"
+                                                                                                                                                                                         d="m 210.7,116.8 h 10 c 1.4,0 2.2,1 1.9,2.3 l -5.1,18 c -0.4,1.2 -1.8,2.3 -3.1,2.3 h -10 c -1.4,0 -2.2,-1 -1.9,-2.3 l 5.1,-18 c 0.3,-1.3 1.8,-2.3 3.1,-2.3 z" /><path
+                                                                                                                                                                                         id="rect6097-7-4-9"
+                                                                                                                                                                                         class="st5"
+                                                                                                                                                                                         d="m 212.5,119.3 h 5 c 1.4,0 2.2,1 1.9,2.3 l -3.7,13 c -0.4,1.2 -1.8,2.3 -3.1,2.3 h -5 c -1.4,0 -2.2,-1 -1.9,-2.3 l 3.7,-13 c 0.3,-1.3 1.7,-2.3 3.1,-2.3 z"
+                                                                                                                                                                                         style="fill:#f39c13;fill-opacity:1" /></g><g
+                                                                                                                                                                                         id="g6111-62-7-3-1"
+                                                                                                                                                                                         transform="translate(204.55085,433.85232)"><path
+                                                                                                                                                                                         id="rect6095-14-8-2-2"
+                                                                                                                                                                                         class="st1"
+                                                                                                                                                                                         d="m 210.7,116.8 h 10 c 1.4,0 2.2,1 1.9,2.3 l -5.1,18 c -0.4,1.2 -1.8,2.3 -3.1,2.3 h -10 c -1.4,0 -2.2,-1 -1.9,-2.3 l 5.1,-18 c 0.3,-1.3 1.8,-2.3 3.1,-2.3 z" /><path
+                                                                                                                                                                                         id="rect6097-6-7-1-7"
+                                                                                                                                                                                         class="st6"
+                                                                                                                                                                                         d="m 212.5,119.3 h 5 c 1.4,0 2.2,1 1.9,2.3 l -3.7,13 c -0.4,1.2 -1.8,2.3 -3.1,2.3 h -5 c -1.4,0 -2.2,-1 -1.9,-2.3 l 3.7,-13 c 0.3,-1.3 1.7,-2.3 3.1,-2.3 z"
+                                                                                                                                                                                         style="fill:#7eb960;fill-opacity:1" /></g></g>
+                                                                                                                                                                                     <g
+                                                                                                                                                                                         id="g6111-64-0-9-1"
+                                                                                                                                                                                         transform="matrix(1.909091,0,0,1.9999989,258.65313,1251.1156)">
+                                                                                                                                                                                     </g>
+                                                                                                                                                                                     <g
+                                                                                                                                                                                         id="g6111-62-9-6-6-1"
+                                                                                                                                                                                         transform="matrix(1.909091,0,0,1.9999989,277.74403,1236.1156)">
+                                                                                                                                                                                     </g>
+                                                                                                                                                                                     <g
+                                                                                                                                                                                         id="g6111-64-8-3-8"
+                                                                                                                                                                                         transform="matrix(1.909091,0,0,1.9999989,378.65313,1491.1156)">
+                                                                                                                                                                                     </g>
+                                                                                                                                                                                     <g
+                                                                                                                                                                                         id="g6111-62-9-5-61-8"
+                                                                                                                                                                                         transform="matrix(1.909091,0,0,1.9999989,397.74403,1476.1156)">
+                                                                                                                                                                                     </g>
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="g9420-2"
+                                                                                                                                                                                         d="m -1408.4468,213.99086 -3.2,10.8 c -1.6,4.8 -7.2,9.2 -12.4,9.2 h -20 c -5.6,0 -8.8,-4 -7.6,-9.2 l 14.8,-52 c 1.2,-5.2 6.8,-9.2 12.4,-9.2 h 11.6 l -11.6,41.2 c -1.2,5.2 2,9.2 7.6,9.2 z m 11.6,-71.2 -14.8,52 c -1.2,5.2 2,9.2 7.6,9.2 h 20 c 5.2,0 10.8,-4.4 12.4,-9.2 l 14.8,-52 c 1.2,-5.2 -2,-9.2 -7.6,-9.2 h -20 c -5.6,0 -11.2,4 -12.4,9.2 z m 92.4,-99.2 v 80 c 0,-22.4 -18,-40 -40,-40 -88.4,0 -160,71.6 -160,160 v -200 c 0,-11.2 8.8,-20 20,-20 h 160 c 11.2,0 20,8.8 20,20 z m -166,20 h -10 v -10 h -10 v 10 h -10 v 10 h 10 v 10 h 10 v -10 h 10 z m 18,20 c 12.4,-8.8 13.2,-8.4 22.8,-17.2 3.2,-2.8 5.2,-8.4 5.2,-12.8 0,-11.2 -9.2,-20 -20,-20 -11.2,0 -20,8.8 -20,20 v 2 h 10 v -2 c 0,-5.6 4.4,-10 10,-10 5.6,0 10,4.4 10,10 0,2.4 -2,6.8 -4,8.4 -10.8,8.4 -10.4,6.8 -26,17.6 v 14 h 20 20 v -10 -4 h -10 v 4 h -10 z m 148,40 v 200 c 0,11.2 -8.8,20 -20,20 h -160 c -11.2,0 -20,-8.8 -20,-20 v -80 c 0,22 18,40 40,40 88.4,0 160,-71.6 160,-160 z m -34,180 h 10 v 10 h 10 v -10 h 10 v -10 h -10 v -10 h -10 v 10 h -10 z m -6,-30 h -20 -20 v 10 4 h 10 v -4 h 10 8 c -12.4,8.8 -13.2,8.4 -22.8,17.2 -3.2,2.8 -5.2,8.4 -5.2,12.8 0,10.8 8.8,20 20,20 11.2,0 20,-8.8 20,-20 v -2 h -10 v 2 c 0,5.6 -4.4,10 -10,10 -5.6,0 -10,-4.4 -10,-10 0,-2.4 2,-6.8 4,-8.4 10.8,-8.4 10.4,-6.8 26,-17.6 z"
+                                                                                                                                                                                         style="stroke-width:4" />
+                                                                                                                                                                                     <g
+                                                                                                                                                                                         id="g9888"
+                                                                                                                                                                                         transform="translate(-888.84677,23.47746)">
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="rect3757-26-33-5-9"
+                                                                                                                                                                                         class="st0"
+                                                                                                                                                                                         d="m -296.6,-0.1 h 160 c 11,0 20,9 20,20 v 280 c 0,11 -9,20 -20,20 h -160 c -11,0 -20,-9 -20,-20 v -280 c 0,-11 9,-20 20,-20 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-4-60-3-86-5"
+                                                                                                                                                                                         class="st1"
+                                                                                                                                                                                         d="m -156.6,59.9 c -88.4,0 -160,71.6 -160,160 0,22.1 17.9,40 40,40 88.4,0 160,-71.6 160,-160 0,-22.1 -17.9,-40 -40,-40 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-7-9-0"
+                                                                                                                                                                                         class="st5"
+                                                                                                                                                                                         d="m -304.8,159.9 c -7.5,18.5 -11.8,38.8 -11.8,60 0,22.1 17.9,40 40,40 l 60,-100 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-5-6-5-0"
+                                                                                                                                                                                         class="st7"
+                                                                                                                                                                                         d="m -216.6,159.9 -60,100 c 67.1,0 124.5,-41.4 148.3,-100 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-1-4-3"
+                                                                                                                                                                                         class="st3"
+                                                                                                                                                                                         d="m -156.6,59.9 c -67.1,0 -124.5,41.4 -148.3,100 h 88.2 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-5-8-3-9"
+                                                                                                                                                                                         class="st4"
+                                                                                                                                                                                         d="m -156.6,59.9 -60,100 h 88.3 c 7.5,-18.5 11.8,-38.8 11.8,-60 -0.1,-22.1 -18,-40 -40.1,-40 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-7-9-5-7"
+                                                                                                                                                                                         class="st5"
+                                                                                                                                                                                         d="m -303.6,34.9 c -1.9,4.6 -2.9,9.7 -2.9,15 0,5.5 4.5,10 10,10 l 15,-25 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-5-6-5-08-9"
+                                                                                                                                                                                         class="st7"
+                                                                                                                                                                                         d="m -281.6,34.9 -15,25 c 16.8,0 31.1,-10.3 37.1,-25 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-1-4-39-9"
+                                                                                                                                                                                         class="st3"
+                                                                                                                                                                                         d="m -266.6,9.9 c -16.8,0 -31.1,10.3 -37.1,25 h 22.1 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-5-8-3-3-7"
+                                                                                                                                                                                         class="st4"
+                                                                                                                                                                                         d="m -266.6,9.9 -15,25 h 22.1 c 1.9,-4.6 2.9,-9.7 2.9,-15 0,-5.5 -4.5,-10 -10,-10 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-7-9-5-3"
+                                                                                                                                                                                         class="st5"
+                                                                                                                                                                                         d="m -173.6,284.9 c -1.9,4.6 -2.9,9.7 -2.9,15 0,5.5 4.5,10 10,10 l 15,-25 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-5-6-5-08-5"
+                                                                                                                                                                                         class="st7"
+                                                                                                                                                                                         d="m -151.6,284.9 -15,25 c 16.8,0 31.1,-10.3 37.1,-25 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-1-4-39-7"
+                                                                                                                                                                                         class="st3"
+                                                                                                                                                                                         d="m -136.6,259.9 c -16.8,0 -31.1,10.3 -37.1,25 h 22.1 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-5-8-3-3-6"
+                                                                                                                                                                                         class="st4"
+                                                                                                                                                                                         d="m -136.6,259.9 -15,25 h 22.1 c 1.9,-4.6 2.9,-9.7 2.9,-15 0,-5.5 -4.5,-10 -10,-10 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-7-9-0-03-8"
+                                                                                                                                                                                         class="st8"
+                                                                                                                                                                                         d="m -156.6,59.9 c -67.1,0 -124.5,41.4 -148.3,100 -7.5,18.5 -11.8,38.8 -11.8,60 0,22.1 17.9,40 40,40 67.1,0 124.5,-41.4 148.3,-100 7.5,-18.5 11.8,-38.8 11.8,-60 0,-22.1 -17.9,-40 -40,-40 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-7-9-0-03-8-9"
+                                                                                                                                                                                         class="st8"
+                                                                                                                                                                                         d="m -266.6,9.9 c -16.8,0 -31.1,10.3 -37.1,25 -1.9,4.6 -2.9,9.7 -2.9,15 0,5.5 4.5,10 10,10 16.8,0 31.1,-10.3 37.1,-25 1.9,-4.6 2.9,-9.7 2.9,-15 0,-5.5 -4.5,-10 -10,-10 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-7-9-0-03-8-9-5"
+                                                                                                                                                                                         class="st8"
+                                                                                                                                                                                         d="m -136.6,259.9 c -16.8,0 -31.1,10.3 -37.1,25 -1.9,4.6 -2.9,9.7 -2.9,15 0,5.5 4.5,10 10,10 16.8,0 31.1,-10.3 37.1,-25 1.9,-4.6 2.9,-9.7 2.9,-15 0,-5.5 -4.5,-10 -10,-10 z" />
+                                                                                                                                                                                     </g>
+                                                                                                                                                                                     <g
+                                                                                                                                                                                         id="g9888-0"
+                                                                                                                                                                                         transform="translate(-888.84677,23.477446)">
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="rect3757-26-33-5-9-0"
+                                                                                                                                                                                         class="st0"
+                                                                                                                                                                                         d="m -296.6,-0.1 h 160 c 11,0 20,9 20,20 v 280 c 0,11 -9,20 -20,20 h -160 c -11,0 -20,-9 -20,-20 v -280 c 0,-11 9,-20 20,-20 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-4-60-3-86-5-7"
+                                                                                                                                                                                         class="st1"
+                                                                                                                                                                                         d="m -156.6,59.9 c -88.4,0 -160,71.6 -160,160 0,22.1 17.9,40 40,40 88.4,0 160,-71.6 160,-160 0,-22.1 -17.9,-40 -40,-40 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-7-9-0-9"
+                                                                                                                                                                                         class="st5"
+                                                                                                                                                                                         d="m -304.8,159.9 c -7.5,18.5 -11.8,38.8 -11.8,60 0,22.1 17.9,40 40,40 l 60,-100 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-5-6-5-0-08"
+                                                                                                                                                                                         class="st7"
+                                                                                                                                                                                         d="m -216.6,159.9 -60,100 c 67.1,0 124.5,-41.4 148.3,-100 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-1-4-3-1"
+                                                                                                                                                                                         class="st3"
+                                                                                                                                                                                         d="m -156.6,59.9 c -67.1,0 -124.5,41.4 -148.3,100 h 88.2 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-5-8-3-9-4"
+                                                                                                                                                                                         class="st4"
+                                                                                                                                                                                         d="m -156.6,59.9 -60,100 h 88.3 c 7.5,-18.5 11.8,-38.8 11.8,-60 -0.1,-22.1 -18,-40 -40.1,-40 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-7-9-5-7-0"
+                                                                                                                                                                                         class="st5"
+                                                                                                                                                                                         d="m -303.6,34.9 c -1.9,4.6 -2.9,9.7 -2.9,15 0,5.5 4.5,10 10,10 l 15,-25 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-5-6-5-08-9-79"
+                                                                                                                                                                                         class="st7"
+                                                                                                                                                                                         d="m -281.6,34.9 -15,25 c 16.8,0 31.1,-10.3 37.1,-25 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-1-4-39-9-5"
+                                                                                                                                                                                         class="st3"
+                                                                                                                                                                                         d="m -266.6,9.9 c -16.8,0 -31.1,10.3 -37.1,25 h 22.1 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-5-8-3-3-7-38"
+                                                                                                                                                                                         class="st4"
+                                                                                                                                                                                         d="m -266.6,9.9 -15,25 h 22.1 c 1.9,-4.6 2.9,-9.7 2.9,-15 0,-5.5 -4.5,-10 -10,-10 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-7-9-5-3-2"
+                                                                                                                                                                                         class="st5"
+                                                                                                                                                                                         d="m -173.6,284.9 c -1.9,4.6 -2.9,9.7 -2.9,15 0,5.5 4.5,10 10,10 l 15,-25 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-5-6-5-08-5-3"
+                                                                                                                                                                                         class="st7"
+                                                                                                                                                                                         d="m -151.6,284.9 -15,25 c 16.8,0 31.1,-10.3 37.1,-25 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-1-4-39-7-2"
+                                                                                                                                                                                         class="st3"
+                                                                                                                                                                                         d="m -136.6,259.9 c -16.8,0 -31.1,10.3 -37.1,25 h 22.1 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-5-8-3-3-6-1"
+                                                                                                                                                                                         class="st4"
+                                                                                                                                                                                         d="m -136.6,259.9 -15,25 h 22.1 c 1.9,-4.6 2.9,-9.7 2.9,-15 0,-5.5 -4.5,-10 -10,-10 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-7-9-0-03-8-0"
+                                                                                                                                                                                         class="st8"
+                                                                                                                                                                                         d="m -156.6,59.9 c -67.1,0 -124.5,41.4 -148.3,100 -7.5,18.5 -11.8,38.8 -11.8,60 0,22.1 17.9,40 40,40 67.1,0 124.5,-41.4 148.3,-100 7.5,-18.5 11.8,-38.8 11.8,-60 0,-22.1 -17.9,-40 -40,-40 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-7-9-0-03-8-9-4"
+                                                                                                                                                                                         class="st8"
+                                                                                                                                                                                         d="m -266.6,9.9 c -16.8,0 -31.1,10.3 -37.1,25 -1.9,4.6 -2.9,9.7 -2.9,15 0,5.5 4.5,10 10,10 16.8,0 31.1,-10.3 37.1,-25 1.9,-4.6 2.9,-9.7 2.9,-15 0,-5.5 -4.5,-10 -10,-10 z" />
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="path3773-0-4-8-8-7-9-0-03-8-9-5-07"
+                                                                                                                                                                                         class="st8"
+                                                                                                                                                                                         d="m -136.6,259.9 c -16.8,0 -31.1,10.3 -37.1,25 -1.9,4.6 -2.9,9.7 -2.9,15 0,5.5 4.5,10 10,10 16.8,0 31.1,-10.3 37.1,-25 1.9,-4.6 2.9,-9.7 2.9,-15 0,-5.5 -4.5,-10 -10,-10 z" />
+                                                                                                                                                                                     </g>
+                                                                                                                                                                                     <path
+                                                                                                                                                                                         id="g6643-0"
+                                                                                                                                                                                         d="m -1022.3376,533.46378 10,10 -40,40 c -10,10 -10,30 0,40 l 20,-20 40.00005,-40 9.99999,10 v -40 z m 0,130 -10,-10 40.00005,-40 c 9.99999,-10 9.99999,-30 0,-40 l -20.00005,20 -40,40 -10,-10 v 40 z"
+                                                                                                                                                                                         style="stroke-width:4"
+                                                                                                                                                                                         sodipodi:nodetypes="ccsccccccccscccccc" /><path
+                                                                                                                                                                                                                                       id="g6635-3"
+                                                                                                                                                                                                                                       d="m -216.04778,295.7705 c -15.2,0 -30.8,5.6 -42.4,17.6 -23.6,23.6 -23.6,61.6 0,84.8 23.6,23.6 61.6,23.6 84.8,0 23.2,-23.6 23.6,-61.6 0,-84.8 -11.6,-12 -26.8,-17.6 -42.4,-17.6 z m 0,20 c 6.8,0 14,2 20.4,5.6 l -54.8,54.8 c -9.2,-15.2 -6.8,-35.6 6.4,-48.8 7.6,-8 17.6,-11.6 28,-11.6 z m 34.4,19.6 c 9.2,15.2 6.8,35.6 -6.4,48.8 -13.2,13.2 -33.2,15.2 -48.8,6 z"
+                                                                                                                                                                                                                                       style="stroke-width:4"
+                                                                                                                                                                                                                                       sodipodi:nodetypes="sccscsscccscscc" /></svg>
+                            </span>
+                            <span class="card-brief">Wild</span>
+                            <span class="card-description">Choose the colour that this card represents. It can be any of the colours in play.</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-2 hidden-sm"></div>
+                <div class="col-8">
+
+                <h2 class="center">A few more things</h2 class="center">
+                    <ul>
+                    <li>
+                    Discarded cards are always discarded face up. A player may not discard their last card.
+                    </li>
+                    <li>
+                    Only one card may be played per turn. Cards must have the same symbol or colour as the one below it. A +2 and a 2 are considered the same symbol.
+                    </li>
+                    <li>
+                    +4 is a tricky card. The next player can play any 2, +2, +4 , 3, 4, 5, <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="31.763309mm" height="31.776455mm" viewBox="0 0 31.763309 31.776455" version="1.1" id="svg238" inkscape:version="1.0.2 (e86c870879, 2021-01-15)" sodipodi:docname="skip.svg">
+
+
+
+                                    <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(-106.39364,-63.014302)">
+                                    <path id="g6635-3" d="m 122.2951,63.014302 c -4.02167,0 -8.14917,1.481667 -11.21833,4.656666 -6.24417,6.244167 -6.24417,16.298334 0,22.436665 6.24416,6.244166 16.29833,6.244166 22.43666,0 6.13833,-6.244165 6.24417,-16.298331 0,-22.436665 -3.06916,-3.174999 -7.09083,-4.656666 -11.21833,-4.656666 z m 0,5.291666 c 1.79917,0 3.70417,0.529167 5.3975,1.481667 l -14.49917,14.499167 c -2.43416,-4.021667 -1.79916,-9.419167 1.69334,-12.911667 2.01083,-2.116667 4.65666,-3.069167 7.40833,-3.069167 z m 9.10167,5.185834 c 2.43416,4.021666 1.79916,9.419166 -1.69334,12.911666 -3.4925,3.492498 -8.78416,4.021665 -12.91166,1.5875 z" style="stroke-width:1.05833" sodipodi:nodetypes="sccscsscccscscc"></path>
+                                    </g>
+                                </svg>, or <svg
+                                  xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                  xmlns:cc="http://creativecommons.org/ns#"
+                                  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                  xmlns:svg="http://www.w3.org/2000/svg"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                  width="21.16667mm"
+                                  height="34.395828mm"
+                                  viewBox="0 0 21.16667 34.395828"
+                                  version="1.1"
+                                  id="svg503"
+                                  inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+                                  sodipodi:docname="reverse.svg">
+                                    <g
+                                        inkscape:label="Layer 1"
+                                        inkscape:groupmode="layer"
+                                        id="layer1"
+                                        transform="translate(147.41072,-239.82589)">
+                                    <path
+                                        id="g6643-0"
+                                        d="m -136.82739,239.82589 2.64584,2.64583 -10.58333,10.58334 c -2.64584,2.64583 -2.64584,7.9375 0,10.58333 l 5.29166,-5.29167 10.58333,-10.58333 2.64584,2.64583 v -10.58333 z m 0,34.39583 -2.64583,-2.64583 10.58333,-10.58333 c 2.64584,-2.64584 2.64584,-7.9375 0,-10.58334 l -5.29166,5.29167 -10.58333,10.58333 -2.64584,-2.64583 v 10.58333 z"
+                                        style="stroke-width:1.05833"
+                                        sodipodi:nodetypes="ccsccccccccscccccc" />
+                                    </g>
+                                </svg> card of any colour to counter it. If the next player instead picks up, then the player who played the +4 chooses the colour.
+                    </li>
+                    <li>
+                    If a player can't or doesn't want to play then they must draw cards until they get a card they can play. They may choose not to play it.
+                    </li>
+                    <li>
+                    If there are no cards left in the Draw Pile then shuffle the Play Pile into the deck—leave the most recently played card in the Play Pile.
+                    </li>
+                    <li>
+                    Players may leave or join at any time. Their hands are discarded and redrawn each time. Players may not abuse this rule.
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 hidden-sm"></div>
+                <div class="col-8">
+
+                    <h2 class="center">Winning</h2 class="center">
+                    <p>
+                    The game is won when a player plays their last card into the Play Pile. The winning card cannot be a +4 or Wild. A player may not discard their last card.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 hidden-sm"></div>
+                <div class="col-8">
+                    <p class="footer-text">Website created by <a href="https://nathanhollows.com">Nathan Hollows</a></p>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.onload=function(){
+                var cards = document.getElementsByClassName("card");
+
+                for (let i = 0; i < cards.length; i++) {
+                    let front = cards[i].children[0];
+                    let back = cards[i].children[1];
+
+                    if (back.clientHeight >= front.clientHeight) {
+                        front.style.position = "absolute";
+                        back.style.position = "inherit";
+                    }
+                    back.style.height = "calc(100% - 2em)";
+                    front.style.height = "calc(100% - 2em)";
+                }
+
+                function is_touch_device() {
+
+                    var prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
+
+                    var mq = function (query) {
+                        return window.matchMedia(query).matches;
+                    }
+
+                    if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+                        return true;
+                    }
+
+                    // include the 'heartz' as a way to have a non matching MQ to help terminate the join
+                    // https://git.io/vznFH
+                    var query = ['(', prefixes.join('touch-enabled),('), 'heartz', ')'].join('');
+                    return mq(query);
+                }
+
+                if (is_touch_device()) {
+                    Array.from(document.getElementsByClassName("card")).forEach(function(e) {
+                        e.addEventListener('click', touchHandler, false);
+                        e.classList.add("touch");
+                    });
+                }
+
+                function touchHandler(e) {
+                    let card = e.target.closest(".card-container");
+                    let toggled = card.classList.contains("flipped");
+                    Array.from(document.getElementsByClassName("flipped")).forEach(function(card) {
+                        card.classList.toggle("flipped");
+                    });
+                    if (!toggled) {
+                        card.classList.toggle("flipped");
+                    }
+                }
+            };
+        </script>
+    </body>
+</html>

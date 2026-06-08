@@ -1,0 +1,423 @@
+/**
+ *** SIMPLE GRID
+ *** (C) ZACH COLE 2016
+ **/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+/* UNIVERSAL */
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;
+	font-size: 100%;
+	background: whitesmoke;
+	color: #333;
+	font-family: 'Lato', Helvetica, sans-serif;
+	line-height: 1.5;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.375rem;
+}
+
+h4 {
+	font-size: 1.125rem;
+}
+
+h5 {
+	font-size: 1rem;
+}
+
+h6 {
+	font-size: 0.875rem;
+}
+
+p {
+	font-size: 1.125rem;
+	line-height: 1.8;
+}
+
+a {
+    color: #0074b2;
+    text-decoration: none;
+}
+
+.red {
+    color: #cb3232;
+}
+
+.font-light {
+	font-weight: 300;
+}
+
+.font-regular {
+	font-weight: 400;
+}
+
+.font-heavy {
+	font-weight: 700;
+}
+
+/* POSITIONING */
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.justify {
+	text-align: justify;
+}
+
+/* ==== GRID SYSTEM ==== */
+
+.container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row {
+	position: relative;
+	width: 100%;
+}
+
+.row [class^="col"] {
+	float: left;
+	margin: 0.5rem 2%;
+	min-height: 0.125rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+	width: 96%;
+}
+
+.col-1-sm {
+	width: 4.33%;
+}
+
+.col-2-sm {
+	width: 12.66%;
+}
+
+.col-3-sm {
+	width: 21%;
+}
+
+.col-4-sm {
+	width: 29.33%;
+}
+
+.col-5-sm {
+	width: 37.66%;
+}
+
+.col-6-sm {
+	width: 46%;
+}
+
+.col-7-sm {
+	width: 54.33%;
+}
+
+.col-8-sm {
+	width: 62.66%;
+}
+
+.col-9-sm {
+	width: 71%;
+}
+
+.col-10-sm {
+	width: 79.33%;
+}
+
+.col-11-sm {
+	width: 87.66%;
+}
+
+.col-12-sm {
+	width: 96%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hidden-sm {
+	display: none;
+}
+
+@media only screen and (min-width: 33.75em) {  /* 540px */
+	.container {
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+	.col-1 {
+		width: 4.33%;
+	}
+
+	.col-2 {
+		width: 12.66%;
+	}
+
+	.col-3 {
+		width: 21%;
+	}
+
+	.col-4 {
+		width: 29.33%;
+	}
+
+	.col-5 {
+		width: 37.66%;
+	}
+
+	.col-6 {
+		width: 46%;
+	}
+
+	.col-7 {
+		width: 54.33%;
+	}
+
+	.col-8 {
+		width: 62.66%;
+	}
+
+	.col-9 {
+		width: 71%;
+	}
+
+	.col-10 {
+		width: 79.33%;
+	}
+
+	.col-11 {
+		width: 87.66%;
+	}
+
+	.col-12 {
+		width: 96%;
+	}
+
+	.hidden-sm {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+	.container {
+		width: 75%;
+		max-width: 60rem;
+	}
+}
+
+.card {
+	border-radius: 1em;
+	transition: all .5s ease-in-out;
+	z-index: 0;
+	color: white;
+    height: 100%;
+}
+
+.card-description {
+    display: block;
+}
+
+.card-black {
+    border: 0.5em solid #828282;
+    background: #464646;
+}
+
+.card-yellow {
+	border: 0.5em solid #f5ac3a;
+	background: #f39c13;
+}
+
+.card-yellow .card-back {
+        border-color: #f39c13;
+}
+
+.card-green {
+	border: 0.5em solid #7eb960;
+	background: #4ca51e;
+}
+
+.card-green .card-back {
+        border-color: #4ca51e;
+}
+
+.card-red {
+	border: 0.5em solid #f77c7c;
+	background: #e73d3d;
+}
+
+.card-red .card-back {
+        border-color: #e73d3d;
+}
+
+.card-blue {
+	border: 0.5em solid #41b4f2;
+	background: #00a6ff;
+}
+
+.card-blue .card-back {
+        border-color: #00a6ff;
+}
+
+.card-title {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 1.9em;
+	line-height: 1em;
+	margin-bottom: 0.1em;
+    margin-right: 0.2em;
+}
+.card-brief {
+	display: inline-block;
+	font-weight: bold;
+	margin: 1em 0;
+    position: relative;
+    top: -0.3em;
+}
+
+hr.one {
+	border: none;
+	height: 2px;
+	background-image: linear-gradient(to right, #f39c13, #f4861d, #f36f28, #ee5733, #e73d3d);
+	margin-top: 4em;
+}
+hr.two {
+	border: none;
+	height: 2px;
+	background-image: linear-gradient(to left, #4ca51e, #00ae73, #00b1bd, #00acf1, #009fff);
+}
+.col-8.center.jumbo {
+	margin: 5em 0 2em;
+}
+
+.deck {
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.card-container {
+    margin-bottom: 1em;
+    perspective: 1000px;
+}
+.card-back {
+    padding: 1em;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -0-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    background: #fbfbfb;
+    color: #333C42;
+    border-radius: 0.5em;
+    width: calc(100% - 2em);
+}
+.card-front {
+    padding: 1em;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    z-index: 2;
+}
+
+.card-inactive {
+    filter: saturate(0) brightness(1.3);
+}
+ul {
+    list-style-position: outside;
+    padding: 0;
+}
+li {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 0.5em;
+}
+p svg, li svg {
+    fill: #333;
+    font-size: 0.8em;
+    margin-bottom: 0.05em;
+}
+svg {
+    fill: white;
+    background: whie;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    top: 0.1em;
+}
+.icons img {
+    margin-left: 0.3em;
+    filter: contrast(0) brightness(2) opacity(0.7);
+    height: 1.2em;
+}
+.icons {
+    position: absolute;
+    bottom: 0;
+    right: 1em;
+}
+p img {
+    margin-bottom: -0.2em;
+    margin-right: 0.2em;
+    height: 1.2em;
+}
+
+.footer-text {
+    font-size: 0.8em;
+    text-align: center;
+    color: #333;
+    margin-top: 3em;
+}
